@@ -1,4 +1,4 @@
-FROM node:boron
+FROM node:8
 
 MAINTAINER Rich Signell <rsignell@usgs.gov>
 LABEL Description="TerriaJS dockerized for USGS Applications"

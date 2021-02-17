@@ -36,7 +36,7 @@
     shareUrlPrefixes: {
         "g": {
             service: "gist",
-            accessToken: "[insert github gist token]"
+            accessToken: "[insert]"
         }
     },
     newShareUrlPrefix: "g",
