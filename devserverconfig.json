@@ -36,7 +36,7 @@
     shareUrlPrefixes: {
         "g": {
             service: "gist",
-            accessToken: "[insert]"
+            accessToken: "3ebdfcd44555f7b5fa412ce858ce8b519a70e7dd"
         }
     },
     newShareUrlPrefix: "g",

@@ -1,7 +1,6 @@
 FROM node:8
 
-MAINTAINER Rich Signell <rsignell@usgs.gov>
-LABEL Description="TerriaJS dockerized for USGS Applications"
+LABEL Description="TerriaJS dockerized for OneGeology Applications"
 
 # ------------
 # Nodejs, Gdal
@@ -55,3 +54,12 @@ COPY ./files/feedback.js /usr/local/app/TerriaMap/node_modules/terriajs-server/l
 COPY ./files/index.js /usr/local/app/TerriaMap/index.js
 COPY ./files/UserInterface.jsx /usr/local/app/TerriaMap/lib/Views/UserInterface.jsx
 COPY ./images/ /usr/local/app/TerriaMap/wwwroot/build/
+COPY ./devserverconfig.json /usr/local/app/TerriaMap/devserverconfig.json
+COPY ./config.json /usr/local/app/TerriaMap/wwwroot/config.json
+COPY ./usgs.json /usr/local/app/TerriaMap/wwwroot/init/usgs.json
+
+# --------------------
+# Run within container
+# --------------------
+
+RUN npm start
